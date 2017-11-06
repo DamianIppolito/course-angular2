@@ -2,12 +2,7 @@ import  {Component} from "angular2/core";
 
 @Component({
   selector: "mi-app",
-  template: `<h1>{{titulo}}</h1>
-            <ul>
-              <li>Titulo: {{pelicula}}</li>
-              <li>Director: {{director}}</li>
-              <li>Año: <strong>{{anio}}</strong></li>
-            </ul>`
+  templateUrl: "app/view/peliculas.html"
 })
 
 export class AppComponent{
