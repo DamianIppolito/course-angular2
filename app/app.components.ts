@@ -11,8 +11,8 @@ import  {Component} from "angular2/core";
 })
 
 export class AppComponent{
-  public titulo = "Películas con Angular2";
-  pelicula = "Batman vs Superman";
-  director = "Zack Snider";
-  anio = "2016";
+  public titulo:string = "Películas con Angular2";
+  public pelicula:string = "Batman vs Superman";
+  public director:string = "Zack Snider";
+  public anio:number = 2016;
 }
