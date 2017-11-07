@@ -4,7 +4,12 @@
 <button type="button" name="Showbutton" (click)="onShowHide(true)" [class.showingData]="mostrarDatos === true">Mostrar datos</button>
 <button type="button" name="Hidebutton" (click)="onShowHide(false)" [class.showingData]="mostrarDatos === false">Ocultar datos</button>
 <ul *ngIf="mostrarDatos === true">
-  <li>Titulo: {{pelicula.pelicula}}</li>
+  <li>Titulo: {{pelicula.titulo}}</li>
   <li>Director: {{pelicula.director}}</li>
   <li>Año: <strong>{{pelicula.anio}}</strong></li>
 </ul>
+
+<p>
+  Cambiar titulo:
+  <input type="text" name="title" value="" (keypress)="debug(true)" [(ngModel)]="pelicula.titulo" />
+</p>
