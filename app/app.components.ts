@@ -11,10 +11,18 @@ export class AppComponent{
   public titulo:string = "Películas con Angular2";
   public pelicula:Pelicula;
   public mostrarDatos:boolean;
+  public peliculas:Array<Pelicula>;
 
   constructor(){
     this.mostrarDatos = false;
     this.pelicula = new Pelicula(1, "Batman vs Superman", "Zack Snider", 2016);
+    this.peliculas = [
+      new Pelicula(1, "Batman vs Superman", "Zack Snider", 2016),
+      new Pelicula(2, "La verdad duele", "Will Smith", 2016),
+      new Pelicula(3, "El señor de los anillos", "Peter Jackson",null),
+      new Pelicula(4, "Una historia real", "El de supersalidos", 2015),
+      new Pelicula(5, "Don Jon", "joseph gordon levitt", 2014)
+    ];
     this.debug();
   }
 
