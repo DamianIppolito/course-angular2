@@ -5,3 +5,11 @@ h1{
 }
 
 .showingData{display: none}
+
+.pelicula-title:hover{text-decoration: underline;}
+
+.clicked{
+  font-size: 20px;
+  color: green;
+  font-family: Arial;
+}
