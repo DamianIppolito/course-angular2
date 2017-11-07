@@ -1,5 +1,7 @@
 <p>Película favorita:</p>
 
+{{datoServicio}}
+
 <button type="button" name="Showbutton" (click)="onShowHide(true)" [class.showingData]="mostrarDatos === true">Mostrar datos</button>
 <button type="button" name="Hidebutton" (click)="onShowHide(false)" [class.showingData]="mostrarDatos === false">Ocultar datos</button>
 <ul *ngIf="mostrarDatos === true">
