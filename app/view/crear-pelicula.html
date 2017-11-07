@@ -1,0 +1,18 @@
+<h2>Añade una pelicula a la lista</h2>
+
+<p>
+  <label>Titulo: </label>
+  <input type="text" #titulo/>
+</p>
+
+<p>
+  <label>Director: </label>
+  <input type="text" #director/>
+</p>
+
+<p>
+  <label>Año: </label>
+  <input type="text" #anio/>
+</p>
+
+<input type="submit" value="Crear Película" (click)="onCrearPelicula(titulo.value, director.value, anio.value)"/>
