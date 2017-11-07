@@ -22,5 +22,6 @@
       <li (click)="onChangePelicula(pelicula)" class="pelicula-title" [class.clicked]="peliculaElegida.titulo===pelicula.titulo">Titulo: <strong>{{pelicula.titulo}}</strong></li>
       <li>Director: <strong>{{pelicula.director}}</strong></li>
       <li *ngIf="pelicula.anio" >Año: <strong>{{pelicula.anio}}</strong></li>
+      <li><a [routerLink]="['CrearPeliculaBasadaEnOtra', {titulo: pelicula.titulo}]">Añadir película basada en esta</a></li>
     </ul>
 </ul>
